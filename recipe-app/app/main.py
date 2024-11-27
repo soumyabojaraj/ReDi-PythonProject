@@ -1,11 +1,14 @@
-from app.recipe_handler import load_recipes
+from app.recipe_handler import load_recipes, find_recipes
 from app.ingredient_handler import enter_ingredients
+RECIPE_FILE = "data/recipes.csv"
 
-ingredients = enter_ingredients()
-print(ingredients)
+if __name__ == "__main__":
+    # ask user to enter available ingredients
+    user_ingredients = enter_ingredients()
+    # load the recipes data (from csv file)
+    recipes = load_recipes(RECIPE_FILE)
 
-# RECIPE_FILE = "data/recipes.csv"
-# recipe_list = load_recipes(RECIPE_FILE)
-# print(recipe_list)
+    matched_recipes = find_recipes(recipes,user_ingredients)
+    print(len(matched_recipes))
 
 
