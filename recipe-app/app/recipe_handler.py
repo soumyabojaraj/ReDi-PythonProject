@@ -14,6 +14,9 @@ def load_recipes(file_path):
                 })
     except FileNotFoundError:
         print(f"Error: {file_path} not found.")
+    except Exception as e:
+        print(f"An error occurred while loading recipes: {e}")
+
     return recipes
 
 def find_recipes(recipes, available_ingredients):
