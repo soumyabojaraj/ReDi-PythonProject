@@ -1,13 +1,9 @@
 # Ignore __pycache__ directories
 __pycache__/
-
+.pytest_cache
 # Ignore compiled Python files
 *.pyc
 *.pyo
-
-# Ignore logs and temporary files
-*.log
-*.tmp
 
 # Ignore virutal environment files
 env
