@@ -8,28 +8,61 @@ This application helps users discover recipes based on the ingredients they have
 - Input available ingredients to find matching recipes.
 - View detailed recipe instructions for selected dishes.
 
+
+
 ## Setup Instructions
-1. Clone the repository.
+### Clone the repository
+
     ```
     git clone <repository_url>
     cd recipe-app
     ```
 
-2. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+### **Setting Up the Virtual Environment**
 
-## Usage
+1. **Create a Virtual Environment**:
+   - Run the following command to create a virtual environment named `env`:
+     ```
+     python3 -m venv env
+     ```
 
+2. **Activate the Virtual Environment**:
+   - On **Windows**:
+     ```
+     env\Scripts\activate
+     ```
+   - On **macOS/Linux**:
+     ```
+     source env/bin/activate
+     ```
+
+3. **Install Dependencies**:
+   - With the virtual environment active, install the required Python packages:
+     ```
+     pip3 install -r requirements.txt
+     ```
+
+4. **Verify Installation**:
+   - Check if dependencies were installed correctly:
+     ```
+     pip3 list
+     ```
+
+---
+
+### **Running the Application**
+ 
 1. Run the application:
+   ```
+   python3 -m app.main
 
-    ```
-    python3 -m app.main
-    ```
 2. Follow the Menu Options:
-    - Select "Find Recipes" to input your available ingredients and find matching recipes.
-    - View detailed instructions and ingredients for the selected recipe.
+    - Select 1 - "Find Recipes" 
+    - input your available ingredients and find matching recipes.
+    - enter the selected recipe to view detailed instructions
+    - Select 2 - "Exit" to exit from the application
+
+NOTE: Please input any ingredients from the csv file for the application to work. (Eg: potato, tomato, spices)
 
 
 ## Testing
@@ -38,3 +71,4 @@ Run tests using pytest:
 ```
 pytest
 ```
+ 
