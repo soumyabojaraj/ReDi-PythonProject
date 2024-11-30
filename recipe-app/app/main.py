@@ -1,5 +1,5 @@
-from app.recipe_handler import load_recipes, find_recipes
-from app.ingredient_handler import enter_ingredients
+from app.recipe import load_recipes, find_recipes
+from app.ingredient import enter_ingredients
 
 if __name__ == "__main__":
     file_path = "data/recipes.csv"
