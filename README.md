@@ -62,7 +62,7 @@ This application helps users discover recipes based on the ingredients they have
     - enter the selected recipe to view detailed instructions
     - Select 2 - "Exit" to exit from the application
 
-NOTE: Please input any ingredients from the csv file for the application to work. (Eg: potato, tomato, spices)
+> NOTE: Please input any ingredients from the csv file for the application to work. (Eg: potato, tomato, spices)
 
 
 ## Testing
@@ -71,4 +71,12 @@ Run tests using pytest:
 ```
 pytest
 ```
- 
+ ## Resources Used:
+Virtual enovironment:
+ https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/
+
+Data: https://baduguru.wordpress.com/category/badugaru-recipes/ - (Personal blog)
+
+Readme: https://www.markdownguide.org/basic-syntax/
+
+Pytest: Chagpt reference code
