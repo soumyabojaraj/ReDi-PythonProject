@@ -1,4 +1,3 @@
-import pytest
 from app.ingredient import enter_ingredients
 
 def test_enter_ingredients(monkeypatch):    
