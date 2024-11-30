@@ -1,5 +1,6 @@
-# Recipe Recommendation application
+*Recipe Recommendation application*
 
+# Overview
 This application helps users discover recipes based on the ingredients they have available. By entering a list of ingredients, users receive recipe recommendations from a preloaded recipe list, with cooking instructions.
 
 # Features
